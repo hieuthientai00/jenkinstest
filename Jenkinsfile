@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "Building"
+                def a = 10
+                echo 'Hello ${a}'
             }
         }
     }
